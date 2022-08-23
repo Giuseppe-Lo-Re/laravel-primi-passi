@@ -7,13 +7,32 @@
     <title>laravel-primi-passi</title>
 </head>
 <body>
+
+    <header>
+    <a href="{{ route('about') }}">
+        about 
+    </a>
+
+    <a href="{{ route('contacts') }}">
+        contacts
+    </a>
+
+    <a href="{{ route('github') }}">
+        github 
+    </a>
+
+    </header>
+
     <h1>
-        Hello LARAVEL!
+        Hello World!
     </h1>
 
+    <br>
+
     <div>
-        Il mio cane si chiama: {{ $name }}, è di razza {{ $breed }} ed ha {{ $age }}
+        Il mio cane si chiama: {{ $name }}, è un {{ $breed }} ed ha {{ $age }}
     </div>
+
 
 </body>
 </html>

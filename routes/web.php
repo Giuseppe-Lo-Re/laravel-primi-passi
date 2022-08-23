@@ -34,3 +34,7 @@ Route::get('/contacts', function () {
     return view('contacts');
 })->name('contacts');
 
+Route::get('/github', function () {
+    return view('github');
+})->name('github');
+
