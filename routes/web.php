@@ -13,6 +13,24 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+
 Route::get('/', function () {
-    return view('welcome');
-});
+
+    $mydog = [
+        'name' => 'Sirio',
+        'breed' => 'Border Collie',
+        'age' => '1 anno e 3 mesi'
+    ];
+
+    return view('home', $mydog);
+})->name('home');
+
+Route::get('/about', function () {
+    return view('about');
+})->name('about');
+
+Route::get('/contacts', function () {
+    return view('contacts');
+})->name('contacts');
+
